@@ -1,37 +1,49 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" xmlns:height="http://www.w3.org/1999/xhtml" xmlns:overflow="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nexus Fórum</title>
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 
-<body>
+<body style="margin: 0px">
 
   <header>
-    <p> cabeçalho da página - home </p>
+    <div id="logomarca" align="center">
+    <p > <img src="../img/logo.png" height="50"/> <br/> NEXUS FORUM</p>
+    </div>
   </header>
-  <nav>
+  <hr/>
+
+  <nav align="center">
     <a href="index.html"> inicio |</a>
     <a href="sobre.html"> sobre nós |</a>
     <a href="servico.html"> como funciona |</a>
     <a href="contato.html"> contato </a>
   </nav>
+  <hr/>
 
-  <aside id="disciplinas">
+
+  <div  style="width: 20%;height: 1000px; padding-left: 5px; float: left; background-color: #999999; color: white">
     <p>aqui jás os temas do fórum</p>
+  </div>
+
+  <div style="width: 51.5%; padding-left: 30px; padding-right: 30px; float: left;  background-color: white;">
+    <p align="center">
+      <iframe style="width: 100%; height: 1000px; overflow: hidden;" src="topicos.html" width="100" height="100" scrolling="yes"> Iframes not supported</iframe>
+    </p>
+  </div>
+
+  <aside style="width: 20%; height: 1000px; float: right; background-color: #999999; text-align: center">
+    <form>
+      <p style="color: white">CREATE ACOUNT</p>
+      <p><input type="email" name="E-mail" value="" placeholder="E-mail" style="width: 80%"></p>
+      <p><input type="password" name="Senha" value="" placeholder="Senha" style="width: 80%"></p>
+      <button>entrar</button> <button>nova conta</button>
+    </form>
   </aside>
-
-  <section id="tópicos">
-    <img >
-    <a href="topico.html">Titulo do tópico</a>
-    <p> prévia</p>
-  </section>
-
 </body>
 
 </html>
