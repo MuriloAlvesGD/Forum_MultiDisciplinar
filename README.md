@@ -1,6 +1,6 @@
 NexusForum 
 Descrição do Projeto
-O NexusForum é uma plataforma de fórum educacional voltada para facilitar a interação entre alunos, professores e entusiastas de diferentes áreas de conhecimento. Este projeto visa criar um ambiente online onde os usuários possam pesquisar conteúdos, discutir ideias, fazer perguntas, colaborar em projetos e compartilhar recursos educacionais de forma colaborativa.
+O NexusForum é uma plataforma de fórum educacional voltada para facilitar o entendimento de diversos assuntos do dia a dia para o público que tem interesse em aprender com uma leitura mais simplificada e fácil de entender. Este projeto visa criar um ambiente online onde os usuários possam pesquisar conteúdos, discutir ideias, fazer perguntas, colaborar em projetos e compartilhar recursos educacionais de forma colaborativa.
 
 Funcionalidades Principais
 Fóruns Temáticos: Os usuários podem participar de fóruns dedicados a áreas específicas de estudo, como Matemática, tecnologia e etc.
