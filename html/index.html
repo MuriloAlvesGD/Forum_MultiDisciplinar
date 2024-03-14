@@ -4,52 +4,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../img/logo.png"/>
   <title>Nexus Fórum</title>
 </head>
 
 
-<body style="margin: 0px">
+<body style="margin: 0px"> <!-- Style removendo as margens do body -->
 
-  <header>
-    <div id="logomarca" align="center">
-    <p > <img src="../img/logo.png" height="50" alt="Nexus Forum logo"/> <br/> NEXUS FORUM</p>
-    </div>
-  </header>
+<header> <!-- Cabeçalho conposto pela LOGO e Barra de navegaçao -->
+  <div id="logomarca" align="center">
+    <p><img src="../img/logo.png" height="50" alt="Nexus Forum logo"/> <br/> NEXUS FORUM</p>
+  </div>
+
   <hr/>
 
-  <nav align="center" style="margin-bottom: 0px; font-family: 'Liberation Mono'; text-transform: uppercase">
+  <!-- Barra de Navegaçao -->
+  <nav align="center" style="margin-bottom: 0px; font-family: 'Liberation Mono'; text-transform: uppercase;">
+    <!-- O trecho "text-decoration: none" remove a aparencia de link -->
     <a href="index.html" style="color: #555555; text-decoration: none; margin-right: 50px;"> inicio</a>
     <a href="sobre.html" style="color: #555555; text-decoration: none; margin-right: 50px;"> sobre-nós</a>
     <a href="servico.html" style="color: #555555; text-decoration: none; margin-right: 50px;"> como-funciona</a>
     <a href="contato.html" style="color: #555555; text-decoration: none;"> contato</a>
   </nav>
-  <hr style="margin-bottom: 0px;"/>
+</header>
 
-  <div  style="width: 20%;height: 1020px; padding-left: 5px; margin-top: 0px; float: left; background-color: #999999; color: white; border-top-right-radius: 25px">
-    <nav>
-      <h2 align="center">TEMAS DOS TÓPICOS</h2>
-      <ul>
-        <li style="margin-bottom: 20px;"><a style="color: white; text-decoration: none" href="index%20B.html">TECNOLOGIA DA INFORMAÇAO</a></li>
-        <li style="margin-bottom: 20px;"><a style="color: white; text-decoration: none" href="index%20C.html">INTELIGENCIA FINANCEIRA</a></li>
-        <li style="margin-bottom: 20px;"><a style="color: white; text-decoration: none" href="index%20D.html">REALIDADE/HISTÓRIA BRASILEIRA</a></li>
-      </ul>
-    </nav>
-  </div>
+<hr/>
 
-  <div style="width: 55.5%; padding-left: 30px; padding-right: 30px; float: left;  background-color: white;">
-    <p align="center">
-      <iframe style="width: 100%; height: 1000px; overflow: hidden; border-radius: 15px" src="topicos.html" width="100" height="100" scrolling="yes"> Iframes not supported</iframe>
-    </p>
-  </div>
+<!-- Barra lateral ESQUERDA contendo temas -->
+<aside
+  style="width: 20%;height: 1050px; margin-top: 0px; float: left; background-color: #999999; display: flex; justify-content: center; text-align: center; border-top-right-radius: 25px">
+  <!-- Barra flutuante a esquerda com conteudo centralizado -->
+  <nav
+    style="background-color: #555555; width: 90%; height: fit-content; text-align: center; margin-top: 5px; padding: 10px; border-radius: 20px">
+    <!-- Definindo caixa dos temas -->
+    <h2 style="color: white; margin: 0">TEMAS DOS TÓPICOS</h2>
+    <ul style="list-style: none; padding-left: 5%">
 
-  <aside style="width: 20%; height: 1020px;margin-top: 0px; float: left; background-color: #999999; text-align: center; border-top-left-radius: 25px">
-    <form>
-      <h2 style="color: white">CRIAR CONTA</h2>
-      <p><input type="email" name="E-mail" value="" placeholder="E-mail" style="width: 80%"></p>
-      <p><input type="password" name="Senha" value="" placeholder="Senha" style="width: 80%"></p>
-      <button>entrar</button> <button>nova conta</button>
+      <!-- Cada ponto da lista é usado como um botao -->
+      <li
+        style="margin-bottom: 5px; background-color: cadetblue; border-radius: 10px; width: fit-content; padding: 5px">
+        <a style="color: white; text-decoration: none" href="index%20B.html"><b>TECNOLOGIA DA INFORMAÇAO</b></a></li>
+      <li
+        style="margin-bottom: 5px; background-color: yellowgreen; border-radius: 10px; width: fit-content; padding: 5px">
+        <a style="color: white; text-decoration: none" href="index%20C.html"><b>INTELIGENCIA FINANCEIRA</b></a></li>
+      <li
+        style="margin-bottom: 5px; background-color: goldenrod; border-radius: 10px; width: fit-content; padding: 5px">
+        <a style="color: white; text-decoration: none" href="index%20D.html"><b>REALIDADE BRASILEIRA</b></a></li>
+    </ul>
+  </nav>
+</aside>
+
+<!-- Barra lateral DIREITA contendo login (e projetada para anuncios) -->
+<aside
+  style="width: 20%; height: 1050px; margin-top: 0px; float: right; background-color: #999999; display: flex; justify-content: center; text-align: center; border-top-left-radius: 25px">
+  <!-- Barra flutuante a direita com conteudo centralizado -->
+  <div
+    style="background-color: #555555; width: 90%; height: fit-content; margin-top: 5px; padding: 10px; border-radius: 20px">
+    <!-- Definindo caixa de login -->
+
+    <form id="account" action="servico.html" , method="post">
+      <!-- Formulário de login com campos obrigatórios (utilizou-se o atributo 'required' -->
+      <b><h2 style="color: white; margin: 0">CRIAR CONTA</h2></b>
+      <p><input required type="email" name="E-mail" value="" placeholder="E-mail"
+                style="width: 90%; height: 25px; border-radius: 10px"></p>
+      <p><input required type="password" name="Senha" value="" placeholder="Senha"
+                style="width: 90%; height: 25px; border-radius: 10px"></p>
     </form>
-  </aside>
+
+    <div style="display: flex; align-items: flex-start; justify-content: center"> <!-- Botoes do formulário -->
+      <!-- Botao funcional com indicaçao do formulário acima usando "form='account'" -->
+      <button type="submit" form="account"
+              style="width: 30%; height: 30px; border-radius: 10px; background-color: yellowgreen; font-size: 70%; margin-right: 10px">
+        <b style="color: white;">ENTRAR</b></button>
+      <!-- Botao nao funcional (por enquanto) -->
+      <button style="width: 30%; height: 30px; border-radius: 10px; background-color: white; font-size: 65%"><b
+        style="color: #555555">CRIAR CONTA</b></button>
+    </div>
+  </div>
+</aside>
+
+<!-- Tela central dos tópicos -->
+<div style="width: 55.5%; display: block; margin-right: auto; margin-left: auto;  background-color: white;">
+  <!-- delimitando o posicionamento -->
+  <p align="center">
+    <iframe style="width: 100%; height: 1000px; overflow: hidden; border-radius: 15px" src="topicos.html"
+            scrolling="yes"> Iframes not supported
+    </iframe> <!-- Tela central (abrindo o HTML de topicos dentro do index.html -->
+  </p>
+</div>
+
 </body>
 
 </html>
