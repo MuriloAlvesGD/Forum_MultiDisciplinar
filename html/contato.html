@@ -2,54 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" href="../img/logo.png" />
+  <link rel="shortcut icon" href="../img/logo.png"/>
   <title>Nexus Fórum</title>
 
 </head>
-<body style="margin: 0px">
 
-<header>
+<body style="margin: 0px"> <!-- Style removendo as margens do body -->
+
+<header> <!-- Cabeçalho conposto pela LOGO e Barra de navegaçao -->
   <div id="logomarca" align="center">
-    <p > <img src="../img/logo.png" height="50" alt="Nexus Forum logo"/> <br/> NEXUS FORUM</p>
+    <p><img src="../img/logo.png" height="50" alt="Nexus Forum logo"/> <br/> NEXUS FORUM</p>
   </div>
+
+  <hr/>
+
+  <!-- Barra de Navegaçao -->
+  <nav align="center" style="margin-bottom: 0px; font-family: 'Liberation Mono'; text-transform: uppercase;">
+    <!-- O trecho "text-decoration: none" remove a aparencia de link -->
+    <a href="index.html" style="color: #555555; text-decoration: none; margin-right: 50px;"> inicio</a>
+    <a href="sobre.html" style="color: #555555; text-decoration: none; margin-right: 50px;"> sobre-nós</a>
+    <a href="servico.html" style="color: #555555; text-decoration: none; margin-right: 50px;"> como-funciona</a>
+    <a href="contato.html" style="color: #555555; text-decoration: none;"> contato</a>
+  </nav>
 </header>
+
 <hr/>
 
-<nav align="center" style="margin-bottom: 0px; font-family: 'Liberation Mono'; text-transform: uppercase">
-  <a href="index.html" style="color: #555555; text-decoration: none; margin-right: 50px;"> inicio</a>
-  <a href="sobre.html" style="color: #555555; text-decoration: none; margin-right: 50px;"> sobre-nós</a>
-  <a href="servico.html" style="color: #555555; text-decoration: none; margin-right: 50px;"> como-funciona</a>
-  <a href="contato.html" style="color: #555555; text-decoration: none;"> contato</a>
-</nav>
-<hr style="margin-bottom: 0px;"/>
+<!-- Conteudo da página -->
+<section style="width: 80%;display: block;margin-right: auto; margin-left: auto; background-color: #555555; color: white; padding-left: 10px; padding-top: 5px;padding-bottom: 5px; margin-top: 40px; border-radius: 10px">   <!-- Configuraçoes da caixa central -->
 
+  <h1 style="margin: 5px; text-align: center">FALE CONOSCO</h1> <!-- Titulo -->
 
-<section style="width: 80%;display: block;margin-right: auto; margin-left: auto; background-color: #555555; color: white; padding-left: 10px; padding-top: 5px;padding-bottom: 5px; margin-top: 40px; border-radius: 10px">
-  <h1 style="margin: 5px; text-align: center">FALE CONOSCO</h1>
-  <hr style="width: 96%; margin-left: auto; margin-right: auto"/>
+  <hr style="width: 96%; margin-left: auto; margin-right: auto"/> <!-- Delimitando a linha para o conteudo -->
 
-  <div style="text-align: justify;font-size: 18px; padding-left: 5px; padding-right: 10px; padding-bottom: 5px; margin-top: 5px">
-  <p>
-    &nbsp Se você tiver alguma dúvida, sugestão ou feedback para compartilhar conosco, não hesite em entrar em contato. Estamos sempre abertos a ouvir nossos membros e a melhorar a experiência no Nexus Forum.
-  </p>
-  <p>
-    &nbsp Para entrar em contato conosco, envie um e-mail para <b style="color:  yellowgreen">contato@nexusforum.com</b> ou <b>envie uma mensagem pelo formulário abaixo</b>. Nossa equipe ficará feliz em ajudar e responder às suas perguntas o mais breve possível.
-  </p>
-  <p>
-    &nbsp Agradecemos por fazer parte da comunidade do Nexus Forum e estamos ansiosos para continuar crescendo juntos em conhecimento e diálogo construtivo.
-  </p>
+  <!-- Conteudo com diversos paragráfos -->
+  <div
+    style="text-align: justify;font-size: 18px; padding-left: 5px; padding-right: 10px; padding-bottom: 5px; margin-top: 5px">
+    <p>
+      &nbsp Se você tiver alguma dúvida, sugestão ou feedback para compartilhar conosco, não hesite em entrar em
+      contato. Estamos sempre abertos a ouvir nossos membros e a melhorar a experiência no Nexus Forum.
+    </p>
+    <p>
+      &nbsp Para entrar em contato conosco, envie um e-mail para <b
+      style="color:  yellowgreen">contato@nexusforum.com</b> ou <b>envie uma mensagem pelo formulário abaixo</b>. Nossa
+      equipe ficará feliz em ajudar e responder às suas perguntas o mais breve possível.
+    </p>
+    <p>
+      &nbsp Agradecemos por fazer parte da comunidade do Nexus Forum e estamos ansiosos para continuar crescendo juntos
+      em conhecimento e diálogo construtivo.
+    </p>
   </div>
 </section>
 
-<div style="width: 80%; text-align: center; display: block; margin-right: auto; margin-left: auto; background-color: #555555; color: white; padding-left: 10px; padding-top: 5px;padding-bottom: 20px; margin-top: 40px; border-radius: 10px">
-  <form action="https://formsubmit.co/murilo.alves@maisunifacisa.com.br", method="post">
+<!-- FORMULÁRIO DE CONTATO-->
+<div
+  style="width: 80%; text-align: center; display: block; margin-right: auto; margin-left: auto; background-color: #555555; color: white; padding-left: 10px; padding-top: 5px;padding-bottom: 20px; margin-top: 40px; border-radius: 10px">
 
-    <h2 style="color: white; margin: 5px">ENVIE UMA MENSAGEM AQUI</h2>
+  <form action="https://formsubmit.co/murilo.alves@maisunifacisa.com.br" , method="post"> <!-- Action integrado ao site formsubmit.co -->
 
+    <h2 style="color: white; margin: 5px">ENVIE UMA MENSAGEM AQUI</h2> <!-- Titulo do formulário -->
+
+    <!-- Campo de E-mail para contato -->
     <p><input required type="email" name="email" value="" placeholder="  E-MAIL" style="width: 80%; height: 25px; border-radius: 10px"></p>
-    <p><input required maxlength="100" type="text" name="nome" value="" placeholder="  SEU NOME ou APELIDO" style="width: 80%; height: 25px; border-radius: 10px"></p>
-    <p><textarea required maxlength="350" name="comentario" placeholder=" Como podemos te ajudar?" style="width: 80%; height: 100px; border-radius: 10px"></textarea></p>
 
+    <!-- Campo de nome para contato -->
+    <p><input required maxlength="100" type="text" name="nome" value="" placeholder="  SEU NOME ou APELIDO" style="width: 80%; height: 25px; border-radius: 10px"></p>
+
+    <!-- Campo de mensagem com limite de caracteres de 350 -->
+    <p><textarea required maxlength="350" name="comentario" placeholder=" Como podemos te ajudar?"
+                 style="width: 80%; height: 100px; border-radius: 10px"></textarea></p>
+
+    <!-- Botao de envio -->
     <button type="submit" style="width: 10%; height: 30px; border-radius: 10px; background-color: yellowgreen; font-size: 70%; "><b style="color: white">ENVIAR</b></button>
   </form>
 </div>
