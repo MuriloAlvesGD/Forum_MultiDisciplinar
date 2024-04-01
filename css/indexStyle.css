@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+}
+
+.navigationBar {
+  margin-bottom: 0px;
+  font-family: 'Liberation Mono';
+  text-transform: uppercase;
+}
+
+.navigationButton {
+  color: #555555;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.sideBar {
+  width: 20%;
+  height: 1050px;
+  margin-top: 0px;
+  background-color: #999999;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  h2 {
+    color: white;
+    margin: 0;
+  }
+}
+
+#leftBar {
+  float: left;
+  border-top-right-radius: 25px;
+}
+
+#rightBar {
+  float: right;
+  border-top-left-radius: 25px;
+}
+
+#filter , #formulárioAccount {
+  background-color: #555555;
+  width: 90%;
+  height: fit-content;
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+.account{
+  input {
+    width: 90%;
+    height: 25px;
+    border-radius: 10px;
+  }
+}
+
+#Buttons{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#accountSubmit{
+  width: 30%;
+  height: 30px;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  font-size: 70%;
+  margin-right: 10px;
+
+  b{
+    color: white;
+  }
+}
+
+#accountCreate{
+  width: 30%;
+  height: 30px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 65%;
+
+  b{
+    color: #555555;
+  }
+}
+
+.filterList {
+  list-style: none;
+  padding-left: 5%;
+
+  li {
+    margin-bottom: 5px;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+#tecnologiaDaInformaçao{
+  background-color: cadetblue;
+}
+
+#inteligenciaFinanceira{
+  background-color: yellowgreen;
+}
+
+#realidadeBrasileira{
+  background-color: goldenrod;
+}
+
+.topicsIframe{
+  width: 55.5%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+
+  p{
+    align-content: center;
+  }
+
+  iframe{
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+}

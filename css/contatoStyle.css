@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+
+.navigationBar {
+  margin-bottom: 0px;
+  font-family: 'Liberation Mono';
+  text-transform: uppercase;
+}
+
+.navigationButton {
+  color: #555555;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.contentBlock {
+  width: 80%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #555555;
+  color: white;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 40px;
+  border-radius: 10px;
+  text-align: center;
+
+  h1{
+    margin: 5px;
+    text-align: center;
+  }
+
+  hr{
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+div.contentBlock{
+  padding-bottom: 20px;
+}
+
+#nexusEmail{
+ color:  yellowgreen;
+}
+
+#contactContent{
+  text-align: justify;
+  font-size: 18px;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
+.formInput{
+  width: 80%;
+  height: 25px;
+  border-radius: 10px;
+}
+
+textarea.formInput{
+  height: 100px;
+}
+
+#formSubmit{
+  width: 10%;
+  height: 30px;
+  border-radius: 10px;
+  background-color:  yellowgreen;
+  font-size: 70%;
+  color: white;
+  font-weight: bold;
+}

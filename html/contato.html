@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="../img/logo.png"/>
+  <link rel="stylesheet" href="../css/contatoStyle.css">
   <title>Nexus Fórum</title>
 
 </head>
 
-<body style="margin: 0px"> <!-- Style removendo as margens do body -->
+<body> <!-- Style removendo as margens do body -->
 
 <header> <!-- Cabeçalho conposto pela LOGO e Barra de navegaçao -->
   <div id="logomarca" align="center">
@@ -17,34 +18,32 @@
   <hr/>
 
   <!-- Barra de Navegaçao -->
-  <nav align="center" style="margin-bottom: 0px; font-family: 'Liberation Mono'; text-transform: uppercase;">
+  <nav class="navigationBar" align="center">
     <!-- O trecho "text-decoration: none" remove a aparencia de link -->
-    <a href="index.html" style="color: #555555; text-decoration: none; margin-right: 50px;"> inicio</a>
-    <a href="sobre.html" style="color: #555555; text-decoration: none; margin-right: 50px;"> sobre-nós</a>
-    <a href="servico.html" style="color: #555555; text-decoration: none; margin-right: 50px;"> como-funciona</a>
-    <a href="contato.html" style="color: #555555; text-decoration: none;"> contato</a>
+    <a class="navigationButton" href="index.html"> inicio</a>
+    <a class="navigationButton" href="sobre.html"> sobre-nós</a>
+    <a class="navigationButton" href="servico.html"> como-funciona</a>
+    <a class="navigationButton" href="contato.html"> contato</a>
   </nav>
 </header>
 
 <hr/>
 
 <!-- Conteudo da página -->
-<section style="width: 80%;display: block;margin-right: auto; margin-left: auto; background-color: #555555; color: white; padding-left: 10px; padding-top: 5px;padding-bottom: 5px; margin-top: 40px; border-radius: 10px">   <!-- Configuraçoes da caixa central -->
+<section class="contentBlock">   <!-- Configuraçoes da caixa central -->
 
-  <h1 style="margin: 5px; text-align: center">FALE CONOSCO</h1> <!-- Titulo -->
+  <h1>FALE CONOSCO</h1> <!-- Titulo -->
 
-  <hr style="width: 96%; margin-left: auto; margin-right: auto"/> <!-- Delimitando a linha para o conteudo -->
+  <hr/> <!-- Delimitando a linha para o conteudo -->
 
   <!-- Conteudo com diversos paragráfos -->
-  <div
-    style="text-align: justify;font-size: 18px; padding-left: 5px; padding-right: 10px; padding-bottom: 5px; margin-top: 5px">
+  <div id="contactContent">
     <p>
       &nbsp Se você tiver alguma dúvida, sugestão ou feedback para compartilhar conosco, não hesite em entrar em
       contato. Estamos sempre abertos a ouvir nossos membros e a melhorar a experiência no Nexus Forum.
     </p>
     <p>
-      &nbsp Para entrar em contato conosco, envie um e-mail para <b
-      style="color:  yellowgreen">contato@nexusforum.com</b> ou <b>envie uma mensagem pelo formulário abaixo</b>. Nossa
+      &nbsp Para entrar em contato conosco, envie um e-mail para <b id="nexusEmail">contato@nexusforum.com</b> ou <b>envie uma mensagem pelo formulário abaixo</b>. Nossa
       equipe ficará feliz em ajudar e responder às suas perguntas o mais breve possível.
     </p>
     <p>
@@ -55,25 +54,23 @@
 </section>
 
 <!-- FORMULÁRIO DE CONTATO-->
-<div
-  style="width: 80%; text-align: center; display: block; margin-right: auto; margin-left: auto; background-color: #555555; color: white; padding-left: 10px; padding-top: 5px;padding-bottom: 20px; margin-top: 40px; border-radius: 10px">
+<div class="contentBlock">
 
   <form action="https://formsubmit.co/murilo.alves@maisunifacisa.com.br" , method="post"> <!-- Action integrado ao site formsubmit.co -->
 
     <h2 style="color: white; margin: 5px">ENVIE UMA MENSAGEM AQUI</h2> <!-- Titulo do formulário -->
 
     <!-- Campo de E-mail para contato -->
-    <p><input required type="email" name="email" value="" placeholder="  E-MAIL" style="width: 80%; height: 25px; border-radius: 10px"></p>
+    <p><input class="formInput" required type="email" name="email" value="" placeholder="  E-MAIL"></p>
 
     <!-- Campo de nome para contato -->
-    <p><input required maxlength="100" type="text" name="nome" value="" placeholder="  SEU NOME ou APELIDO" style="width: 80%; height: 25px; border-radius: 10px"></p>
+    <p><input class="formInput" required maxlength="100" type="text" name="nome" value="" placeholder="  SEU NOME ou APELIDO"></p>
 
     <!-- Campo de mensagem com limite de caracteres de 350 -->
-    <p><textarea required maxlength="350" name="comentario" placeholder=" Como podemos te ajudar?"
-                 style="width: 80%; height: 100px; border-radius: 10px"></textarea></p>
+    <p><textarea class="formInput" required maxlength="350" name="comentario" placeholder=" Como podemos te ajudar?"></textarea></p>
 
     <!-- Botao de envio -->
-    <button type="submit" style="width: 10%; height: 30px; border-radius: 10px; background-color: yellowgreen; font-size: 70%; "><b style="color: white">ENVIAR</b></button>
+    <button id="formSubmit" type="submit">ENVIAR</button>
   </form>
 </div>
 

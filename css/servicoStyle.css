@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+.navigationBar {
+  margin-bottom: 0px;
+  font-family: 'Liberation Mono';
+  text-transform: uppercase;
+}
+
+.navigationButton {
+  color: #555555;
+  text-decoration: none;
+  margin-right: 50px;
+}
