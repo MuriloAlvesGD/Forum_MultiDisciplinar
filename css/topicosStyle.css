@@ -1,0 +1,31 @@
+.topic{
+  background-color: #555555;
+  color: white;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.topicLink{
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+hr{
+  width: 96%;
+  margin-left: 5px;
+}
+
+.topicDescription{
+  text-align: justify;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}

@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+h1{
+  margin: 5px;
+  text-align: center;
+}
+
 .navigationBar {
   margin-bottom: 0px;
   font-family: 'Liberation Mono';
@@ -28,11 +33,6 @@ body {
   border-radius: 10px;
   text-align: center;
 
-  h1{
-    margin: 5px;
-    text-align: center;
-  }
-
   hr{
     width: 96%;
     margin-left: auto;
@@ -42,6 +42,11 @@ body {
 
 div.contentBlock{
   padding-bottom: 20px;
+
+  h2{
+    color: white;
+    margin: 5px;
+  }
 }
 
 #nexusEmail{
