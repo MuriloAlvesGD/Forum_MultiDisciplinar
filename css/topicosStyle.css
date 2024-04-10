@@ -20,7 +20,6 @@ body{
 
 .topic-link{
   text-transform: uppercase;
-  color: white;
   text-decoration: none;
   font-size: x-large;
   font-weight: bold;
@@ -29,6 +28,14 @@ body{
   flex-direction: row;
   justify-content: center;
   text-align: center;
+}
+
+.topic-link:link{
+  color: white;
+}
+
+.topic-link:visited{
+  color: yellowgreen;
 }
 
 .topic-link:hover{
