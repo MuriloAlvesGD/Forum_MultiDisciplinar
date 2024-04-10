@@ -2,23 +2,64 @@ body {
   margin: 0;
 }
 
-h1{
+h1 {
   margin: 5px;
 }
 
+
+#containerLogomarca {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  background-color: rgb(0, 0, 0, 50%);
+}
+
+#logomarca {
+  width: 200px;
+  height: auto;
+}
+
 .navigationBar {
-  margin-bottom: 0px;
-  font-family: 'Liberation Mono';
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 45px;
+  row-gap: 10px;
+  background-color: #555555;
+  height: fit-content;
+  padding: 10px;
+}
+
+a.navigationButton {
+  color: #555555;
+  text-decoration: none;
+  font-family: 'Liberation Mono', serif;
   text-transform: uppercase;
 }
 
-.navigationButton {
-  color: #555555;
-  text-decoration: none;
-  margin-right: 50px;
+div.navigationButton {
+  background-color: rgb(255, 255, 255, 50%);
+  height: fit-content;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+
 }
 
-#pageContent{
+div.navigationButton:hover {
+  background-color: rgb(0, 0, 0, 50%);
+
+  a.navigationButton {
+    color: white;
+  }
+}
+
+
+#pageContent {
   width: 80%;
   display: block;
   margin-right: auto;
@@ -29,16 +70,24 @@ h1{
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 40px;
-  border-radius: 10px;
+  border-radius: 20px;
 
-  hr{
+  hr {
     width: 96%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-#content{
+#title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#content {
   text-align: justify;
   font-size: 18px;
   padding-left: 5px;
@@ -46,7 +95,15 @@ h1{
   padding-bottom: 5px;
   margin-top: 5px;
 
-  ul{
+  ul {
     padding-left: 15px;
   }
+}
+
+@media screen and (max-device-width: 380px) {
+
+  #logomarca {
+    width: 75%;
+  }
+
 }

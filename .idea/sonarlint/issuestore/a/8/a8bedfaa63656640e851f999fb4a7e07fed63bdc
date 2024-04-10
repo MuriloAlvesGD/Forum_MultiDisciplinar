@@ -1,9 +1,7 @@
 
-i	Web:S1827")Remove this deprecated "align" attribute.(¾ã„œþÿÿÿÿJ$0c1eb02a-ed34-42a6-893f-4fceeb6cb066
-tWeb:AvoidCommentedOutCodeCheckC"Remove this commented out code.(áÒ¾›þÿÿÿÿJ$79959c1c-3719-4453-b751-3246ad16b2fa
-h	Web:S1827O"-Remove this deprecated "scrolling" attribute.(åÕª‹J$704a9225-a19d-4be3-8e12-015499186944
-yWeb:FrameWithoutTitleCheckO"-Add a "title" attribute to this <iframe> tag.(åÕª‹J$7ea66265-559a-4552-8572-fa8a65ac401e
-	Web:S5255"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(·§žºJ$b94ccb02-218e-4a8b-b8ba-c96753aa5226
-	Web:S5255%"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(ÀÆßêJ$6ebe312d-c29b-4fae-9ec2-98645ab6083e
-	Web:S5255#"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(À…˜ÑJ$6a62d37f-712a-4af2-8e34-678f3a8b5570
-	Web:S52556"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(Ùè‚öJ$0807db20-341b-41e3-a4b1-a544544774a8
+€Web:FrameWithoutTitleCheck?"-Add a "title" attribute to this <iframe> tag.(»öÑ˜8„ðŒÒê1J$88f6050a-0fc9-410e-9b4c-67a8ac3689ce
+{Web:AvoidCommentedOutCodeCheckT"Remove this commented out code.(áÒ¾›þÿÿÿÿ8…ðŒÒê1J$d4da9549-0c7d-4d4b-887f-0ed9b38559b2
+„	Web:S5255"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(íê²ÔøÿÿÿÿJ$7f97368f-5063-4297-99b7-f837f7a5e582
+	Web:S5255("DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(ÀÆßêJ$310ea448-f9ec-485a-9591-2b165b5bd9c8
+†	Web:S5255&"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(À…˜Ñ8†ðŒÒê1J$75071b36-9da3-46ac-9af8-d45ee67ad89b
+†	Web:S5255F"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(Ùè‚ö8†ðŒÒê1J$c03c9bc5-a1a3-4c5e-87da-e4e0367c6f53

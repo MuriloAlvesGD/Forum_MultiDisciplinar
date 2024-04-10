@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="../img/logo.png"/>
+  <link rel="shortcut icon" href="../img/ShortCut%20Branca.png"/>
   <link rel="stylesheet" href="../css/indexStyle.css"/>
   <title>Nexus Fórum</title>
 </head>
@@ -13,71 +13,81 @@
 <body> <!-- Style removendo as margens do body -->
 
 <header> <!-- Cabeçalho conposto pela LOGO e Barra de navegaçao -->
-  <div id="logomarca" align="center">
-    <p><img src="../img/logo.png" height="50" alt="Nexus Forum logo"/> <br/> NEXUS FORUM</p>
-  </div>
-
-  <hr/>
+    <a id="containerLogomarca" href="index.html"><img id="logomarca" src="../img/logo%20branca.png" alt="Nexus Forum logo"/></a>
 
   <!-- Barra de Navegaçao -->
-  <nav class="navigationBar" align="center">
-    <!-- O trecho "text-decoration: none" remove a aparencia de link -->
-    <a class="navigationButton" href="index.html"> inicio</a>
-    <a class="navigationButton" href="sobre.html"> sobre-nós</a>
-    <a class="navigationButton" href="servico.html"> como-funciona</a>
-    <a class="navigationButton" href="contato.html"> contato</a>
+  <nav class="navigationBar">
+    <div class="navigationButton">
+      <a class="navigationButton" href="index.html"> inicio</a>
+    </div>
+    <div class="navigationButton">
+      <a class="navigationButton" href="sobre.html"> sobre-nós</a>
+    </div>
+    <div class="navigationButton">
+      <a class="navigationButton" href="servico.html"> como-funciona</a>
+    </div>
+    <div class="navigationButton">
+      <a class="navigationButton" href="contato.html"> contato</a>
+    </div>
   </nav>
 </header>
 
-<hr/>
 
-<!-- Barra lateral ESQUERDA contendo temas -->
-<aside class="sideBar" id="leftBar">
-  <!-- Barra flutuante a esquerda com conteudo centralizado -->
-  <nav id="filter">
-    <!-- Definindo caixa dos temas -->
-    <h2>TEMAS DOS TÓPICOS</h2>
-    <ul class="filterList">
+<div id="container-content">
+  <!-- Barra lateral ESQUERDA contendo temas -->
+  <aside class="sideBar" id="leftBar">
+    <!-- Barra flutuante a esquerda com conteudo centralizado -->
+    <nav id="filter">
+      <!-- Definindo caixa dos temas -->
+      <span id="filter-title">TEMAS DOS TÓPICOS</span>
+      <div id="filter-options">
+        <!-- Cada ponto da lista é usado como um botao -->
+        <div class="filterList" id="tecnologiaDaInformaçao">
+          <a class="filterList" href="index%20B.html">TECNOLOGIA DA INFORMAÇAO</a>
+        </div>
+        <div class="filterList" id="inteligenciaFinanceira">
+          <a class="filterList" href="index%20C.html">INTELIGENCIA FINANCEIRA</a>
+        </div>
+        <div class="filterList" id="realidadeBrasileira">
+          <a class="filterList" href="index%20D.html">REALIDADE BRASILEIRA</a>
+        </div>
+      </div>
+    </nav>
+  </aside>
 
-      <!-- Cada ponto da lista é usado como um botao -->
-      <li id="tecnologiaDaInformaçao">
-        <a href="index%20B.html"><b>TECNOLOGIA DA INFORMAÇAO</b></a></li>
-      <li id="inteligenciaFinanceira">
-        <a href="index%20C.html"><b>INTELIGENCIA FINANCEIRA</b></a></li>
-      <li id="realidadeBrasileira">
-        <a href="index%20D.html"><b>REALIDADE BRASILEIRA</b></a></li>
-    </ul>
-  </nav>
-</aside>
 
-<!-- Barra lateral DIREITA contendo login (e projetada para anuncios) -->
-<aside class="sideBar" id="rightBar">
-  <!-- Barra flutuante a direita com conteudo centralizado -->
-  <div id="formulárioAccount">
-    <!-- Definindo caixa de login -->
-
-    <form class="account" id="account" action="servico.html" , method="post">
-      <!-- Formulário de login com campos obrigatórios (utilizou-se o atributo 'required' -->
-      <b><h2>CRIAR CONTA</h2></b>
-      <p><input required type="email" name="E-mail" value="" placeholder="E-mail"></p>
-      <p><input required type="password" name="Senha" value="" placeholder="Senha"></p>
-    </form>
-
-    <div id="Buttons"> <!-- Botoes do formulário -->
-      <!-- Botao funcional com indicaçao do formulário acima usando "form='account'" -->
-      <button id="accountSubmit" type="submit" form="account"><b>ENTRAR</b></button>
-      <!-- Botao nao funcional (por enquanto) -->
-      <button id="accountCreate"><b>CRIAR CONTA</b></button>
-    </div>
+  <!-- Tela central dos tópicos -->
+  <div class="topicsIframe">
+    <!-- delimitando o posicionamento -->
+    <p>
+      <iframe src="topicos.html"> Iframes not supported</iframe>
+      <!-- Tela central (abrindo o HTML de html.topicos dentro do index.html -->
+    </p>
   </div>
-</aside>
 
-<!-- Tela central dos tópicos -->
-<div class="topicsIframe">
-  <!-- delimitando o posicionamento -->
-  <p>
-    <iframe src="topicos.html" scrolling="yes"> Iframes not supported </iframe> <!-- Tela central (abrindo o HTML de html.topicos dentro do index.html -->
-  </p>
+
+  <!-- Barra lateral DIREITA contendo login (e projetada para anuncios) -->
+  <aside class="sideBar" id="rightBar">
+    <!-- Barra flutuante a direita com conteudo centralizado -->
+    <div id="formulárioAccount">
+      <!-- Definindo caixa de login -->
+
+      <form id="account" action="servico.html" , method="post">
+        <!-- Formulário de login com campos obrigatórios (utilizou-se o atributo 'required' -->
+        <p id="form-title">CRIAR CONTA
+        <p>
+        <p><input required type="email" name="E-mail" value="" placeholder="E-mail"></p>
+        <p><input required type="password" name="Senha" value="" placeholder="Senha"></p>
+      </form>
+
+      <div id="Buttons"> <!-- Botoes do formulário -->
+        <!-- Botao funcional com indicaçao do formulário acima usando "form='account'" -->
+        <button id="accountSubmit" type="submit" form="account"><b>ENTRAR</b></button>
+        <!-- Botao nao funcional (por enquanto) -->
+        <button id="accountCreate"><b>CRIAR CONTA</b></button>
+      </div>
+    </div>
+  </aside>
 </div>
 
 </body>

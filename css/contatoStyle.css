@@ -7,17 +7,58 @@ h1{
   text-align: center;
 }
 
+
+#containerLogomarca {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  background-color: rgb(0, 0, 0, 50%);
+}
+
+#logomarca {
+  width: 200px;
+  height: auto;
+}
+
 .navigationBar {
-  margin-bottom: 0px;
-  font-family: 'Liberation Mono';
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 45px;
+  row-gap: 10px;
+  background-color: #555555;
+  height: fit-content;
+  padding: 10px;
+}
+
+a.navigationButton {
+  color: #555555;
+  text-decoration: none;
+  font-family: 'Liberation Mono', serif;
   text-transform: uppercase;
 }
 
-.navigationButton {
-  color: #555555;
-  text-decoration: none;
-  margin-right: 50px;
+div.navigationButton {
+  background-color: rgb(255, 255, 255, 50%);
+  height: fit-content;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+
 }
+
+div.navigationButton:hover {
+  background-color: rgb(0, 0, 0, 50%);
+
+  a.navigationButton {
+    color: white;
+  }
+}
+
 
 .contentBlock {
   width: 80%;
@@ -30,7 +71,7 @@ h1{
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 40px;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
 
   hr{
@@ -50,6 +91,8 @@ div.contentBlock{
 }
 
 #nexusEmail{
+  word-break: break-all;
+  font-weight: bold;
  color:  yellowgreen;
 }
 
@@ -73,11 +116,18 @@ textarea.formInput{
 }
 
 #formSubmit{
-  width: 10%;
+  width: 150px;
   height: 30px;
   border-radius: 10px;
   background-color:  yellowgreen;
-  font-size: 70%;
+  font-size: 16px;
   color: white;
   font-weight: bold;
+}
+
+@media screen and (max-device-width: 380px) {
+
+  #logomarca {
+    width: 75%;
+  }
 }

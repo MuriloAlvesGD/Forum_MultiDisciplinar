@@ -1,49 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" href="../img/logo.png"/>
-  <link rel="stylesheet" href="../css/sobreStyle.css">
-  <title>Nexus Fórum</title>
+<!doctype html>
+<html class="no-js" lang="" xmlns:height="http://www.w3.org/1999/xhtml" xmlns:overflow="http://www.w3.org/1999/xhtml">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../img/ShortCut%20Branca.png"/>
+  <link rel="stylesheet" href="../css/sobreStyle.css"/>
+  <title>Nexus Fórum</title>
 </head>
+
 
 <body> <!-- Style removendo as margens do body -->
 
 <header> <!-- Cabeçalho conposto pela LOGO e Barra de navegaçao -->
-  <div id="logomarca" align="center">
-    <p><img src="../img/logo.png" height="50" alt="Nexus Forum logo"/> <br/> NEXUS FORUM</p>
-  </div>
-
-  <hr/>
+  <a id="containerLogomarca" href="index.html"><img id="logomarca" src="../img/logo%20branca.png" alt="Nexus Forum logo"/></a>
 
   <!-- Barra de Navegaçao -->
-  <nav class="navigationBar" align="center">
-    <!-- O trecho "text-decoration: none" remove a aparencia de link -->
-    <a class="navigationButton" href="index.html"> inicio</a>
-    <a class="navigationButton" href="sobre.html"> sobre-nós</a>
-    <a class="navigationButton" href="servico.html"> como-funciona</a>
-    <a class="navigationButton" href="contato.html"> contato</a>
+  <nav class="navigationBar">
+    <div class="navigationButton">
+      <a class="navigationButton" href="index.html"> inicio</a>
+    </div>
+    <div class="navigationButton">
+      <a class="navigationButton" href="sobre.html"> sobre-nós</a>
+    </div>
+    <div class="navigationButton">
+      <a class="navigationButton" href="servico.html"> como-funciona</a>
+    </div>
+    <div class="navigationButton">
+      <a class="navigationButton" href="contato.html"> contato</a>
+    </div>
   </nav>
 </header>
-
-<hr/>
 
 <!-- Conteudo da página -->
 <section id="pageContent">
   <!-- Configuraçoes da caixa central -->
-  <table align="center">
-    <tr>
-      <td>
-        <h1>SOBRE NÓS</h1> <!-- Titulo -->
-      </td>
-      <td> <!-- AUDIO LENDO O TEXTO DA PÁGINA -->
-        <audio autoplay="autoplay" controls="controls">
-          <source src="../audios/ttsmaker-file-2024-3-14-18-58-56.mp3" type="audio/mp3" />
-        </audio>
-      </td>
-    </tr>
-  </table>
+  <div id="title">
+    <h1>SOBRE NÓS</h1> <!-- Titulo -->
+  </div>
 
   <hr/> <!-- Delimitando a linha para o conteudo -->
 

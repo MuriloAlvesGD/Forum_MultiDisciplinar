@@ -1,137 +1,308 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+#containerLogomarca {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  background-color: rgb(0, 0, 0, 50%);
+}
+
+#logomarca {
+  width: 200px;
+  height: auto;
 }
 
 .navigationBar {
-  margin-bottom: 0px;
-  font-family: 'Liberation Mono';
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 45px;
+  row-gap: 10px;
+  background-color: #555555;
+  height: fit-content;
+  padding: 10px;
+}
+
+a.navigationButton {
+  color: #555555;
+  text-decoration: none;
+  font-family: 'Liberation Mono', serif;
   text-transform: uppercase;
 }
 
-.navigationButton {
-  color: #555555;
-  text-decoration: none;
-  margin-right: 50px;
+div.navigationButton {
+  background-color: rgb(255, 255, 255, 50%);
+  height: fit-content;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+div.navigationButton:hover {
+  background-color: rgb(0, 0, 0, 50%);
+
+  a.navigationButton {
+    color: white;
+  }
+}
+
+#container-content {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .sideBar {
   width: 20%;
-  height: 1050px;
+  height: 101vh;
   margin-top: 0px;
   background-color: #999999;
   display: flex;
   justify-content: center;
   text-align: center;
-  h2 {
-    color: white;
-    margin: 0;
+}
+
+.topicsIframe {
+  width: 55.5%;
+  background-color: white;
+
+  p {
+    align-content: center;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 15px;
   }
 }
 
 #leftBar {
-  float: left;
   border-top-right-radius: 25px;
 }
 
 #rightBar {
-  float: right;
   border-top-left-radius: 25px;
 }
 
-#filter , #formulárioAccount {
+#filter, #formulárioAccount {
   background-color: #555555;
   width: 90%;
   height: fit-content;
   text-align: center;
-  margin-top: 5px;
+  margin: 5px;
   padding: 10px;
   border-radius: 20px;
 }
 
 
-.account{
+#account {
   input {
+    margin-top: 5px;
     width: 90%;
     height: 25px;
     border-radius: 10px;
   }
 }
 
-#Buttons{
+#Buttons {
+  margin-top: 5px;
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
   justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-#accountSubmit{
-  width: 30%;
+#accountSubmit, #accountCreate {
+  width: 120px;
   height: 30px;
   border-radius: 10px;
   background-color: yellowgreen;
   font-size: 70%;
-  margin-right: 10px;
 
-  b{
+  b {
     color: white;
   }
 }
 
-#accountCreate{
-  width: 30%;
-  height: 30px;
-  border-radius: 10px;
+#accountCreate {
   background-color: white;
   font-size: 65%;
 
-  b{
+  b {
     color: #555555;
   }
 }
 
-.filterList {
-  list-style: none;
-  padding-left: 5%;
-
-  li {
-    margin-bottom: 5px;
-    border-radius: 10px;
-    width: fit-content;
-    padding: 5px;
-
-    a{
-      color: white;
-      text-decoration: none;
-    }
-  }
+#accountCreate:hover {
+  opacity: 90%;
 }
 
-#tecnologiaDaInformaçao{
+#accountSubmit:hover {
+  opacity: 90%;
+}
+
+#filter-options {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10px;
+
+}
+
+#filter-title, #form-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+div.filterList {
+  margin-bottom: 5px;
+  border-radius: 10px;
+  width: 80%;
+  height: auto;
+  padding: 5px;
+}
+
+a.filterList {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-size: 15px
+}
+
+#tecnologiaDaInformaçao {
   background-color: cadetblue;
 }
 
-#inteligenciaFinanceira{
+#tecnologiaDaInformaçao:hover {
+  opacity: 90%;
+}
+
+#inteligenciaFinanceira {
   background-color: yellowgreen;
 }
 
-#realidadeBrasileira{
+#inteligenciaFinanceira:hover {
+  opacity: 90%;
+}
+
+#realidadeBrasileira {
   background-color: goldenrod;
 }
 
-.topicsIframe{
-  width: 55.5%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: white;
+#realidadeBrasileira:hover {
+  opacity: 90%;
+}
 
-  p{
-    align-content: center;
+@media screen and (max-device-width: 950px) {
+  a.filterList {
+    font-size: 12px;
   }
 
-  iframe{
-    width: 100%;
-    height: 1000px;
-    overflow: hidden;
-    border-radius: 15px;
+  #filter-title, #form-title {
+    font-size: 18px
   }
+
+  #accountSubmit, #accountCreate {
+    width: 80%;
+  }
+
+  #Buttons {
+    gap: 5px;
+  }
+
+
+  @media screen and (max-device-width: 630px) {
+    #container-content {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sideBar {
+      width: 100%;
+      height: fit-content;
+      margin-top: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      align-items: center;
+    }
+
+    #leftBar, #rightBar {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    #leftBar.sideBar {
+      margin-bottom: 15px;
+    }
+
+    #rightBar.sideBar {
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+
+
+    #filter-options {
+      flex-wrap: nowrap;
+      gap: 15px;
+    }
+
+    #filter-title, #form-title {
+      font-size: 24px;
+    }
+
+    div.filterList {
+      width: 25%;
+    }
+
+    a.filterList {
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      font-size: 15px
+    }
+
+    .topicsIframe {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-device-width: 457px) {
+    a.filterList {
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (max-device-width: 380px) {
+    #filter-options {
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    div.filterList {
+      width: 90%;
+    }
+
+    #logomarca {
+      width: 75%;
+    }
+  }
+
 }
