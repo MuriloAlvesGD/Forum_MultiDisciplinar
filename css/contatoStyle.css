@@ -70,6 +70,10 @@ input, .action-btn, #action-img {
   display: none;
 }
 
+#pageContent{
+  position: relative;
+  min-height: 100vh;
+}
 
 .contentBlock {
   width: 80%;
@@ -137,12 +141,13 @@ textarea.formInput{
 }
 
 footer {
-  position: sticky;
+  bottom: 0;
+  position: absolute;
   background-color: #555555;
   color: white;
-  height: fit-content;
-  margin-top: 40px;
-  padding: 30px;
+  width: calc(100% - 30px);
+  height: 100px;
+  padding: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

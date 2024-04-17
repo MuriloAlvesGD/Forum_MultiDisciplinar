@@ -13,9 +13,8 @@
 <body> <!-- Style removendo as margens do body -->
 
 <header> <!-- Cabeçalho conposto pela LOGO e Barra de navegaçao -->
-  <div id="containerLogomarca">
-    <a href="index.html"><img id="logomarca" src="../img/logo%20branca.png" alt="Nexus Forum logo"/></a>
-  </div>
+  <a id="containerLogomarca" href="index.html"><img id="logomarca" src="../img/logo%20branca.png"
+                                                    alt="Nexus Forum logo"/></a>
 
   <!-- Barra de Navegaçao-->
   <nav class="navigationBar">
@@ -33,74 +32,76 @@
   </nav>
 </header>
 
-
-<div id="container-content">
-  <!-- Barra lateral ESQUERDA contendo temas -->
-  <aside class="sideBar" id="leftBar">
-    <!-- Barra flutuante a esquerda com conteudo centralizado -->
-    <nav id="filter">
-      <!-- Definindo caixa dos temas -->
-      <span id="filter-title">TEMAS DOS TÓPICOS</span>
-      <div id="filter-options">
-        <!-- Cada ponto da lista é usado como um botao -->
-        <div class="filterList" id="tecnologiaDaInformaçao">
-          <a class="filterList" href="index%20B.html">TECNOLOGIA DA INFORMAÇAO</a>
+<div id="pageContent">
+  <div id="container-content">
+    <!-- Barra lateral ESQUERDA contendo temas -->
+    <aside class="sideBar" id="leftBar">
+      <!-- Barra flutuante a esquerda com conteudo centralizado -->
+      <nav id="filter">
+        <!-- Definindo caixa dos temas -->
+        <span id="filter-title">TEMAS DOS TÓPICOS</span>
+        <div id="filter-options">
+          <!-- Cada ponto da lista é usado como um botao -->
+          <div class="filterList" id="tecnologiaDaInformaçao">
+            <a class="filterList" href="index%20B.html">TECNOLOGIA DA INFORMAÇAO</a>
+          </div>
+          <div class="filterList" id="inteligenciaFinanceira">
+            <a class="filterList" href="index%20C.html">INTELIGENCIA FINANCEIRA</a>
+          </div>
+          <div class="filterList" id="realidadeBrasileira">
+            <a class="filterList" href="index%20D.html">REALIDADE BRASILEIRA</a>
+          </div>
         </div>
-        <div class="filterList" id="inteligenciaFinanceira">
-          <a class="filterList" href="index%20C.html">INTELIGENCIA FINANCEIRA</a>
-        </div>
-        <div class="filterList" id="realidadeBrasileira">
-          <a class="filterList" href="index%20D.html">REALIDADE BRASILEIRA</a>
-        </div>
-      </div>
-    </nav>
-  </aside>
+      </nav>
+    </aside>
 
 
-  <!-- Tela central dos tópicos -->
-  <div class="topicsIframe">
-    <!-- delimitando o posicionamento -->
-    <p>
-      <iframe src="topicos%20B.html"> Iframes not supported</iframe>
-      <!-- Tela central (abrindo o HTML de html.topicos dentro do index.html -->
-    </p>
-  </div>
-
-
-  <!-- Barra lateral DIREITA contendo login (e projetada para anuncios) -->
-  <aside class="sideBar" id="rightBar">
-    <!-- Barra flutuante a direita com conteudo centralizado -->
-    <div id="formulárioAccount">
-      <!-- Definindo caixa de login -->
-
-      <form id="account" action="servico.html" , method="post">
-        <!-- Formulário de login com campos obrigatórios (utilizou-se o atributo 'required' -->
-        <p id="form-title">CRIAR CONTA
-        <p>
-        <p><input required type="email" name="E-mail" value="" placeholder="E-mail"></p>
-        <p><input required type="password" name="Senha" value="" placeholder="Senha"></p>
-      </form>
-
-      <div id="Buttons"> <!-- Botoes do formulário -->
-        <!-- Botao funcional com indicaçao do formulário acima usando "form='account'" -->
-        <button id="accountSubmit" type="submit" form="account"><b>ENTRAR</b></button>
-        <!-- Botao nao funcional (por enquanto) -->
-        <button id="accountCreate"><b>CRIAR CONTA</b></button>
-      </div>
+    <!-- Tela central dos tópicos -->
+    <div class="topicsIframe">
+      <!-- delimitando o posicionamento -->
+      <p>
+        <iframe src="topicos%20B.html"> Iframes not supported</iframe>
+        <!-- Tela central (abrindo o HTML de html.topicos dentro do index.html -->
+      </p>
     </div>
-  </aside>
-</div>
-<footer>
-  <ul id="footer-text">
-    <h2>PROJETO CRIADO POR:</h2>
-    <li>Murilo Alves</li>
-    <li>Diogo Fernando</li>
-    <li>Demostenes Diniz</li>
-    <li>Thomás Lopes</li>
-  </ul>
-  <a href="https://github.com/MuriloAlvesGD/Forum_MultiDisciplinar.git" target="_blank"><img id="footer-img" src="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt="github logo"/></a>
-</footer>
 
+
+    <!-- Barra lateral DIREITA contendo login (e projetada para anuncios) -->
+    <aside class="sideBar" id="rightBar">
+      <!-- Barra flutuante a direita com conteudo centralizado -->
+      <div id="formulárioAccount">
+        <!-- Definindo caixa de login -->
+
+        <form id="account" action="servico.html" , method="post">
+          <!-- Formulário de login com campos obrigatórios (utilizou-se o atributo 'required' -->
+          <p id="form-title">CRIAR CONTA
+          <p>
+          <p><input required type="email" name="E-mail" value="" placeholder="E-mail"></p>
+          <p><input required type="password" name="Senha" value="" placeholder="Senha"></p>
+        </form>
+
+        <div id="Buttons"> <!-- Botoes do formulário -->
+          <!-- Botao funcional com indicaçao do formulário acima usando "form='account'" -->
+          <button id="accountSubmit" type="submit" form="account"><b>ENTRAR</b></button>
+          <!-- Botao nao funcional (por enquanto) -->
+          <button id="accountCreate"><b>CRIAR CONTA</b></button>
+        </div>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <ul id="footer-text">
+      <h2>PROJETO CRIADO POR:</h2>
+      <li>Murilo Alves</li>
+      <li>Diogo Fernando</li>
+      <li>Demostenes Diniz</li>
+      <li>Thomás Lopes</li>
+    </ul>
+    <a href="https://github.com/MuriloAlvesGD/Forum_MultiDisciplinar.git" target="_blank"><img id="footer-img"
+                                                                                               src="https://cdn-icons-png.flaticon.com/256/25/25231.png"
+                                                                                               alt="github logo"/></a>
+  </footer>
+</div>
 </body>
 
 </html>
