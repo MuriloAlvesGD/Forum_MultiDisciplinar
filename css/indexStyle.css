@@ -60,7 +60,7 @@
   height: auto;
 }
 
-input, .action-btn, #action-img {
+#action-btn, #action-img {
   display: none;
 }
 
