@@ -17,41 +17,51 @@
   height: auto;
 }
 
-.navigationBar {
+.navigationBar  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #555555;
+  height: fit-content;
+  padding: 5px;
+}
+
+.navigation-btns {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  column-gap: 2%;
+  column-gap: 5%;
   row-gap: 10px;
-  background-color: #555555;
-  height: fit-content;
-  padding: 10px;
 }
 
-a.navigationButton {
-  color: #555555;
-  text-decoration: none;
+.navigationButton {
   font-family: 'Liberation Mono', serif;
   text-transform: uppercase;
-}
-
-div.navigationButton {
+  color: #555555;
+  text-decoration: none;
   background-color: rgb(255, 255, 255, 50%);
   height: fit-content;
   width: fit-content;
   padding: 5px;
-  border-radius: 10px;
-
+  border-radius: 5px;
 }
 
-div.navigationButton:hover {
+.navigationButton:hover {
   background-color: rgb(0, 0, 0, 50%);
+  color: white;
+}
 
-  a.navigationButton {
-    color: white;
-  }
+#action-img {
+  filter: invert(100%);
+  width: 30px;
+  height: auto;
+}
+
+input, .action-btn, #action-img {
+  display: none;
 }
 
 #container-content {
@@ -186,6 +196,7 @@ a.filterList {
   font-size: 15px
 }
 
+
 #tecnologiaDaInformaçao {
   background-color: cadetblue;
 }
@@ -209,6 +220,28 @@ a.filterList {
 #realidadeBrasileira:hover {
   opacity: 90%;
 }
+
+footer {
+  background-color: #555555;
+  color: white;
+  height: fit-content;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    list-style: none;
+  }
+}
+
+#footer-img {
+  filter: invert(100%);
+  aspect-ratio: 1 / 1;
+  width: 88px;
+}
+
 
 @media screen and (max-device-width: 950px) {
   a.filterList {
@@ -259,10 +292,9 @@ a.filterList {
       border-top-right-radius: 25px;
     }
 
-
     #filter-options {
-      flex-wrap: nowrap;
-      gap: 15px;
+      flex-wrap: wrap;
+      gap: 5px;
     }
 
     #filter-title, #form-title {
@@ -270,7 +302,7 @@ a.filterList {
     }
 
     div.filterList {
-      width: 25%;
+      width: 90%;
     }
 
     a.filterList {
@@ -286,31 +318,29 @@ a.filterList {
   }
 
   @media screen and (max-device-width: 457px) {
-    a.filterList {
-      font-size: 10px;
+    .navigation-btns{
+      display: none;
     }
 
-    a.navigationButton{
-      font-size: 15px;
+    #action-img {
+      display: flex;
+    }
+
+    input:checked ~ .navigation-btns{
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+    }
+
+    input:checked ~ label{
+      rotate: 180deg;
     }
   }
 
+
   @media screen and (max-device-width: 380px) {
-    #filter-options {
-      flex-wrap: wrap;
-      gap: 5px;
-    }
-
-    div.filterList {
-      width: 90%;
-    }
-
     #logomarca {
       width: 75%;
-    }
-
-    a.navigationButton{
-      font-size: 12px;
     }
   }
 
