@@ -110,6 +110,27 @@ input, .action-btn, #action-img {
   }
 }
 
+footer {
+  background-color: #555555;
+  color: white;
+  height: fit-content;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    list-style: none;
+  }
+}
+
+#footer-img {
+  filter: invert(100%);
+  aspect-ratio: 1 / 1;
+  width: 88px;
+}
+
 @media screen and (max-device-width: 380px) {
 
   #logomarca {
