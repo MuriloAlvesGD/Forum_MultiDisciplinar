@@ -222,6 +222,7 @@ a.filterList {
 }
 
 footer {
+  position: sticky;
   background-color: #555555;
   color: white;
   height: fit-content;

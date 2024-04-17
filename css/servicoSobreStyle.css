@@ -1,5 +1,6 @@
-body {
+* {
   margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -111,9 +112,11 @@ input, .action-btn, #action-img {
 }
 
 footer {
+  position: sticky;
   background-color: #555555;
   color: white;
   height: fit-content;
+  margin-top: 40px;
   padding: 30px;
   display: flex;
   flex-direction: row;
